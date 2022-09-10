@@ -1,0 +1,5 @@
+train: /Users/ohbs/Desktop/CP1/yolov5/images/train
+val: /Users/ohbs/Desktop/CP1/yolov5/images/valid
+
+nc: 1
+names: ['mobility']

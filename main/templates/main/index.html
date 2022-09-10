@@ -1,589 +1,151 @@
-<!DOCTYPE html>
-<html lang="ko">
-  <head>
-    {% load static %}
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="author" content="Untree.co" />
-    <link rel="shortcut icon" href="favicon.png" />
-
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/static/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="/static/css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="/static/css/jquery.fancybox.min.css" />
-    <link rel="stylesheet" href="/static/fonts/icomoon/style.css" />
-    <link rel="stylesheet" href="/static/fonts/flaticon/font/flaticon.css" />
-    <link rel="stylesheet" href="/static/css/aos.css" />
-    <link rel="stylesheet" href="/static/css/style.css" />
-
-    <title>Codestates Project Team06</title>
-  </head>
-
-  <!--내비바-->
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="100">
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close">
-          <span class="icofont-close js-menu-toggle"></span>
+{% extends "main/base.html" %} {% block content %}
+<!--메인페이지-->
+<div class="untree_co-hero pb-0" id="home-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="dots"></div>
+        <div class="row justify-content-center">
+          <div class="col-md-7 text-center mb-5">
+            <h1 class="heading" data-aos="fade-up" data-aos-delay="0">
+              Personal Mobility 문화를
+              <span class="d-block"
+                >선도하는 <a href="/">새로운 기능들</a></span
+              >
+            </h1>
+          </div>
         </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
-
-    <nav class="site-nav dark js-site-navbar mb-5 site-navbar-target">
-      <div class="container">
-        <div class="site-navigation">
-          <a href="/" class="logo m-0 float-left"
-            >Riding<span class="text-primary">.</span></a
-          >
-          <ul
-            class="js-clone-nav d-none d-lg-inline-block site-menu float-left"
-          >
-            <li class="active">
-              <a href="#home-section" class="nav-link">Home</a>
-            </li>
-            <li><a href="#about-section" class="nav-link">About</a></li>
-            <li><a href="#pricing-section" class="nav-link">Functions</a></li>
-            <li><a href="#features-section" class="nav-link">Team</a></li>
-            <li><a href="#contact-section" class="nav-link">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!--메인페이지-->
-    <div class="untree_co-hero pb-0" id="home-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="dots"></div>
-            <div class="row justify-content-center">
-              <div class="col-md-7 text-center mb-5">
-                <h1 class="heading" data-aos="fade-up" data-aos-delay="0">
-                  Free Bootstrap 4 Landing Page for SaaS Websites
-                  <span class="d-block"
-                    >by <a href="https://untree.co">Untree.co</a></span
-                  >
-                </h1>
+        <div class="row align-items-center">
+          <div class="col-lg-4">
+            <div class="intro">
+              <div class="excerpt" data-aos="fade-up" data-aos-delay="100">
+                <span class="caption">더 안전한 PM을 위해</span>
+                <h2 class="font-weight-bold">PM의 A to Z</h2>
+                <p>
+                  비교적 저렴한 가격으로 가까운 거리를 빠르게 이동할 수 있는
+                  공유기반 전동킥보드의 이용률이 크게 향상되고 있다, 문제는
+                  전동킥보드가 적절하지 않은 공간에 주차되어 안전사고를 유발하는
+                  것이다. 본 논문에서는 딥러닝 기반 객체 인식 기술을 적용하여
+                </p>
               </div>
+              <!-- /.excerpt -->
+              <p data-aos="fade-up" data-aos-delay="200">
+                <a
+                  href="/#pricing-section"
+                  class="btn btn-primary smoothscroll mr-1"
+                  >기능 소개</a
+                >
+                <a
+                  href="/#features-section"
+                  class="btn btn-outline-primary smoothscroll"
+                  >팀 소개</a
+                >
+              </p>
             </div>
-            <div class="row align-items-center">
-              <div class="col-lg-4">
-                <div class="intro">
-                  <div class="excerpt" data-aos="fade-up" data-aos-delay="100">
-                    <span class="caption">더 안전한 PM을 위해</span>
-                    <h2 class="font-weight-bold">PM의 A to Z까지</h2>
-                    <p>
-                      비교적 저렴한 가격으로 가까운 거리를 빠르게 이동할 수 있는
-                      공유기반 전동킥보드의 이용률이 크게 향상되고 있다, 문제는
-                      전동킥보드가 적절하지 않은 공간에 주차되어 안전사고를
-                      유발하는 것이다. 본 논문에서는 딥러닝 기반 객체 인식
-                      기술을 적용하여
-                    </p>
-                  </div>
-                  <!-- /.excerpt -->
-                  <p data-aos="fade-up" data-aos-delay="200">
-                    <a
-                      href="#pricing-section"
-                      class="btn btn-primary smoothscroll mr-1"
-                      >기능 소개</a
-                    >
-                    <a
-                      href="#features-section"
-                      class="btn btn-outline-primary smoothscroll"
-                      >팀 소개</a
-                    >
-                  </p>
-                </div>
-              </div>
-              <!-- /.col-lg-5 -->
-              <div class="col-lg-8">
-                <div class="illustration">
-                  <img
-                    src="/static/images/graphs-statistics_outline.svg"
-                    alt="Image"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
+          </div>
+          <!-- /.col-lg-5 -->
+          <div class="col-lg-8">
+            <div class="illustration">
+              <img
+                src="/static/images/scooter.svg"
+                width="550"
+                alt="Image"
+                class="img-fluid"
+              />
             </div>
           </div>
         </div>
-        <!-- /.row -->
       </div>
-      <!-- /.container -->
-      <!-- <div class="illustration">
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+  <!-- <div class="illustration">
       
     </div> -->
-    </div>
-    <!-- /.untree_co-hero -->
+</div>
+<!-- /.untree_co-hero -->
 
-    <!--프로젝트 임팩트 소개--->
-    <div class="untree_co-section" id="about-section">
-      <div class="container">
-        <div class="row justify-content-between mb-5">
-          <div
-            class="col-lg-8 mb-4 mb-lg-0"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <img
-              src="/static/images/undraw_getting_coffee_re_f2do.svg"
-              alt="Image"
-              class="img-fluid"
-            />
-          </div>
-          <!-- /.col-lg-6 -->
-          <div class="col-lg-4">
-            <div class="mb-4" data-aos="fade-up" data-aos-delay="0">
-              <span class="caption">About</span>
-              <h2 class="heading">The Company</h2>
-            </div>
-            <div class="mb-4" data-aos="fade-up" data-aos-delay="100">
-              <p>
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts. Separated
-                they live in Bookmarksgrove right at the coast
-              </p>
-              <p>
-                Separated they
-                <span class="highlight"
-                  >live in Bookmarksgrove right at the coast of the
-                  Semantics</span
-                >, a large language ocean. A small river named Duden flows by
-                their place and supplies it with the necessary regelialia.
-              </p>
-            </div>
+<!--프로젝트 임팩트 소개--->
+<div class="untree_co-section" id="about-section">
+  <div class="container">
+    <div class="row justify-content-between mb-5">
+      <div
+        class="col-lg-8 mb-4 mb-lg-0"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <img
+          src="/static/images/team2.svg"
+          alt="Image"
+          class="img-fluid"
+        />
+      </div>
+      <!-- /.col-lg-6 -->
+      <div class="col-lg-4">
+        <div class="mb-4" data-aos="fade-up" data-aos-delay="0">
+          <span class="caption">About</span>
+          <h2 class="heading">서비스 소개</h2>
+        </div>
+        <div class="mb-4" data-aos="fade-up" data-aos-delay="100">
+          <p>
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts. Separated they
+            live in Bookmarksgrove right at the coast
+          </p>
+          <p>
+            Separated they
+            <span class="highlight"
+              >live in Bookmarksgrove right at the coast of the Semantics</span
+            >, a large language ocean. A small river named Duden flows by their
+            place and supplies it with the necessary regelialia.
+          </p>
+        </div>
 
-            <ul
-              class="list-unstyled ul-check primary mb-4"
-              data-aos="fade-up"
-              data-aos-delay="200"
+        <ul
+          class="list-unstyled ul-check primary mb-4"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <li>There live the blind texts</li>
+          <li>Far far away behind the word</li>
+          <li>Their place and supplies</li>
+        </ul>
+
+        <div class="row count-numbers">
+          <div class="col-6 col-lg-6" data-aos="fade-up" data-aos-delay="0">
+            <span class="counter d-block"
+              ><span data-number="3">0</span><span>가지</span></span
             >
-              <li>There live the blind texts</li>
-              <li>Far far away behind the word</li>
-              <li>Their place and supplies</li>
-            </ul>
-
-            <div class="row count-numbers">
-              <div class="col-6 col-lg-6" data-aos="fade-up" data-aos-delay="0">
-                <span class="counter d-block"
-                  ><span data-number="3">0</span><span>가지</span></span>
-                <span class="caption-2">필수 기능</span>
-              </div>
-              <div
-                class="col-6 col-lg-6"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <span class="counter d-block"
-                  ><span data-number="5">0</span><span>명</span></span>
-                <span class="caption-2">팀원들</span>
-              </div>
-            </div>
+            <span class="caption-2">필수 기능</span>
           </div>
-          <!-- /.col-lg-6 -->
-        </div>
-        <!-- /.row -->
-
-        <!--프로젝트 사회적 의의, 배경 소개--->
-        <div class="untree_co-section">
-          <div class="container">
-            <div class="row mb-5">
-              <div
-                class="col-12 text-center"
-                data-aos="fade-up"
-                data-aos-delay="0"
-              >
-                <span class="caption">간단한 수식어</span>
-                <h2 class="heading">
-                  서비스 개발을 하게 된 배경 및 사회적 의의
-                </h2>
-                <p>아무거나 넣어주세요.아무거나 넣어주세요.</p>
-              </div>
-            </div>
-            <!-- /.row -->
-
-            <div class="row">
-              <div
-                class="col-lg-6 mb-4"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <div class="service horizontal d-flex">
-                  <div class="service-icon color-1 mb-4">
-                    <svg
-                      class="bi bi-app-indicator"
-                      width="1em"
-                      height="1em"
-                      viewBox="0 0 16 16"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"
-                      />
-                      <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                    </svg>
-                  </div>
-                  <!-- /.icon -->
-                  <div class="service-contents">
-                    <h3>Built for Developers</h3>
-                    <p>
-                      Far far away, behind the word mountains, far from the
-                      countries Vokalia and Consonantia, there live the blind
-                      texts.
-                    </p>
-                    <p><a href="#" class="read-more">Learn More</a></p>
-                  </div>
-                  <!-- /.service-contents-->
-                </div>
-                <!-- /.service -->
-              </div>
-
-              <div
-                class="col-lg-6 mb-4"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
-                <div class="service horizontal d-flex">
-                  <div class="service-icon color-2 mb-4">
-                    <svg
-                      class="bi bi-arrow-repeat"
-                      width="1em"
-                      height="1em"
-                      viewBox="0 0 16 16"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2.854 7.146a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L2.5 8.207l1.646 1.647a.5.5 0 0 0 .708-.708l-2-2zm13-1a.5.5 0 0 0-.708 0L13.5 7.793l-1.646-1.647a.5.5 0 0 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0 0-.708z"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        d="M8 3a4.995 4.995 0 0 0-4.192 2.273.5.5 0 0 1-.837-.546A6 6 0 0 1 14 8a.5.5 0 0 1-1.001 0 5 5 0 0 0-5-5zM2.5 7.5A.5.5 0 0 1 3 8a5 5 0 0 0 9.192 2.727.5.5 0 1 1 .837.546A6 6 0 0 1 2 8a.5.5 0 0 1 .501-.5z"
-                      />
-                    </svg>
-                  </div>
-                  <!-- /.icon -->
-                  <div class="service-contents">
-                    <h3>Modern Design</h3>
-                    <p>
-                      Far far away, behind the word mountains, far from the
-                      countries Vokalia and Consonantia, there live the blind
-                      texts.
-                    </p>
-                    <p><a href="#" class="read-more">Learn More</a></p>
-                  </div>
-                  <!-- /.service-contents-->
-                </div>
-                <!-- /.service -->
-              </div>
-
-              <div
-                class="col-lg-6 mb-4"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                <div class="service horizontal d-flex">
-                  <div class="service-icon color-3 mb-4">
-                    <svg
-                      class="bi bi-briefcase"
-                      width="1em"
-                      height="1em"
-                      viewBox="0 0 16 16"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-6h-1v6a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-6H0v6z"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v2.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 6.884V4.5zM1.5 4a.5.5 0 0 0-.5.5v1.616l6.871 1.832a.5.5 0 0 0 .258 0L15 6.116V4.5a.5.5 0 0 0-.5-.5h-13zM5 2.5A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z"
-                      />
-                    </svg>
-                  </div>
-                  <!-- /.icon -->
-                  <div class="service-contents">
-                    <h3>Build Stunning Websites</h3>
-                    <p>
-                      Far far away, behind the word mountains, far from the
-                      countries Vokalia and Consonantia, there live the blind
-                      texts.
-                    </p>
-                    <p><a href="#" class="read-more">Learn More</a></p>
-                  </div>
-                  <!-- /.service-contents-->
-                </div>
-                <!-- /.service -->
-              </div>
-
-              <div
-                class="col-lg-6 mb-4"
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
-                <div class="service horizontal d-flex">
-                  <div class="service-icon color-4 mb-4">
-                    <svg
-                      class="bi bi-collection"
-                      width="1em"
-                      height="1em"
-                      viewBox="0 0 16 16"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M14.5 13.5h-13A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5zm-13 1A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5h-13zM2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1z"
-                      />
-                    </svg>
-                  </div>
-                  <!-- /.icon -->
-                  <div class="service-contents">
-                    <h3>Bring Ideas to Life</h3>
-                    <p>
-                      Far far away, behind the word mountains, far from the
-                      countries Vokalia and Consonantia, there live the blind
-                      texts.
-                    </p>
-                    <p><a href="#" class="read-more">Learn More</a></p>
-                  </div>
-                  <!-- /.service-contents-->
-                </div>
-                <!-- /.service -->
-              </div>
-            </div>
-            <!-- /.row -->
-          </div>
-          <!-- /.container -->
-        </div>
-        <!-- /.untree_co-section -->
-
-        <!--기능소개-->
-        <div class="untree_co-section bg-light" id="pricing-section">
-          <div class="container">
-            <div class="row pricing-title">
-              <div
-                class="col-12 text-center"
-                data-aos="fade-up"
-                data-aos-delay="0"
-              >
-                <span class="caption">간단한</span>
-                <h2 class="heading">기능소개</h2>
-                <p>Pricing for everyone. Choose your plan now!</p>
-              </div>
-            </div>
-            <!-- /.row -->
-
-            <div class="row justify-content-center">
-              <div class="col-lg-10">
-                <div class="row">
-                  <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="pricing">
-                      <div class="body">
-                        <div class="price">
-                          <span class="price"><sup>1</sup>    <span>수요예측</span></span>
-                          <span class="d-block plan mb-4">기능</span>
-                        </div>
-                        <ul class="list-unstyled ul-check primary mb-5">
-                          <li>There live the blind texts</li>
-                          <li>Far far away behind the word</li>
-                          <li>
-                            Far from the countries Vokalia and Consonantia
-                          </li>
-                        </ul>
-                        <p class="text-center mb-0">
-                          <a href="/demand" class="btn btn-outline-primary">Get Started</a
-                          >
-                        </p>
-                      </div>
-                    </div>
-                    <!-- /.pricing -->
-                  </div>
-                  <!-- /.col-lg-4 -->
-
-                  <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="pricing active">
-                      <div class="body">
-                        <div class="price">
-                          <span class="price"
-                            ><sup>2</sup>    <span>헬멧 인증</span></span
-                          >
-                          <span class="d-block plan mb-4">기능</span>
-                        </div>
-                        <ul class="list-unstyled ul-check primary mb-5">
-                          <li>There live the blind texts</li>
-                          <li>Far far away behind the word</li>
-                          <li>
-                            Far from the countries Vokalia and Consonantia
-                          </li>
-                        </ul>
-                        <p class="text-center mb-0">
-                          <a href="/helmet" class="btn btn-outline-primary">Get Started</a>
-                        </p>
-                      </div>
-                    </div>
-                    <!-- /.pricing -->
-                  </div>
-                  <!-- /.col-lg-4 -->
-
-                  <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="pricing">
-                      <div class="body">
-                        <div class="price">
-                          <span class="price"
-                            ><sup>3</sup>    <span>주차 인증</span></span
-                          >
-                          <span class="d-block plan mb-4">기능</span>
-                        </div>
-                        <ul class="list-unstyled ul-check primary mb-5">
-                          <li>There live the blind texts</li>
-                          <li>Far far away behind the word</li>
-                          <li>
-                            Far from the countries Vokalia and Consonantia
-                          </li>
-                        </ul>
-                        <p class="text-center mb-0">
-                          <a href="/parking" class="btn btn-outline-primary">Get Started</a
-                          >
-                        </p>
-                      </div>
-                    </div>
-                    <!-- /.pricing -->
-                  </div>
-                  <!-- /.col-lg-4 -->
-                </div>
-                <!-- /.row -->
-              </div>
-              <!-- /.col-lg-8 -->
-            </div>
-            <!-- /.row -->
-          </div>
-          <!-- /.container -->
-        </div>
-        <!-- /.untree_co-section -->
-
-        <!--팀소개-->
-        <div class="row pt-5" id="features-section">
-          <div class="col-12 mb-5" data-aos="fade-up">
-            <span class="caption">Team</span>
-            <h2 class="heading">The Team</h2>
-          </div>
-          <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delayt="100">
-            <img
-              src="/static/images/person_1.jpg"
-              alt="Image"
-              class="img-fluid mb-3 w-50 rounded-circle"
-            />
-            <h3 class="h5 font-weight-bold">Job Smith</h3>
-            <p>
-              Separated they
-              <span class="highlight"
-                >live in Bookmarksgrove right at the coast of the
-                Semantics</span
-              >, a large language ocean. A small river named Duden flows by
-              their place and supplies it with the necessary regelialia.
-            </p>
-          </div>
-          <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delayt="200">
-            <img
-              src="/static/images/person_2.jpg"
-              alt="Image"
-              class="img-fluid mb-3 w-50 rounded-circle"
-            />
-            <h3 class="h5 font-weight-bold">Jenny Wilson</h3>
-            <p>
-              Separated they
-              <span class="highlight"
-                >live in Bookmarksgrove right at the coast of the
-                Semantics</span
-              >, a large language ocean. A small river named Duden flows by
-              their place and supplies it with the necessary regelialia.
-            </p>
-          </div>
-          <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delayt="300">
-            <img
-              src="/static/images/person_3.jpg"
-              alt="Image"
-              class="img-fluid mb-3 w-50 rounded-circle"
-            />
-            <h3 class="h5 font-weight-bold">Richard Cruise</h3>
-            <p>
-              Separated they
-              <span class="highlight"
-                >live in Bookmarksgrove right at the coast of the
-                Semantics</span
-              >, a large language ocean. A small river named Duden flows by
-              their place and supplies it with the necessary regelialia.
-            </p>
-          </div>
-          <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delayt="100">
-            <img
-              src="/static/images/person_1.jpg"
-              alt="Image"
-              class="img-fluid mb-3 w-50 rounded-circle"
-            />
-            <h3 class="h5 font-weight-bold">Job Smith</h3>
-            <p>
-              Separated they
-              <span class="highlight"
-                >live in Bookmarksgrove right at the coast of the
-                Semantics</span
-              >, a large language ocean. A small river named Duden flows by
-              their place and supplies it with the necessary regelialia.
-            </p>
-          </div>
-          <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delayt="100">
-            <img
-              src="/static/images/person_1.jpg"
-              alt="Image"
-              class="img-fluid mb-3 w-50 rounded-circle"
-            />
-            <h3 class="h5 font-weight-bold">Job Smith</h3>
-            <p>
-              Separated they
-              <span class="highlight"
-                >live in Bookmarksgrove right at the coast of the
-                Semantics</span
-              >, a large language ocean. A small river named Duden flows by
-              their place and supplies it with the necessary regelialia.
-            </p>
+          <div class="col-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <span class="counter d-block"
+              ><span data-number="5">0</span><span>명</span></span
+            >
+            <span class="caption-2">팀원들</span>
           </div>
         </div>
       </div>
-      <!-- /.container -->
+      <!-- /.col-lg-6 -->
     </div>
-    <!-- /.untree_co-section -->
+    <!-- /.row -->
 
-    <!--사이트 사진 추가해서 마무리(대시보드)-->
-    <div class="untree_co-section bg-light">
+    <!--프로젝트 사회적 의의, 배경 소개--->
+    <div class="untree_co-section">
       <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-lg-5 order-lg-2 js-custom-dots">
-            <a
-              href="#"
-              class="service link horizontal d-flex active"
-              data-aos="fade-left"
-              data-aos-delay="0"
-            >
+        <div class="row mb-5">
+          <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="0">
+            <span class="caption">ABOUT</span>
+            <h2 class="heading">서비스 개발의 배경 및 사회적 의의</h2>
+            <p>아무거나 넣어주세요.아무거나 넣어주세요.</p>
+          </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+          <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="service horizontal d-flex">
               <div class="service-icon color-1 mb-4">
                 <svg
                   class="bi bi-app-indicator"
@@ -605,19 +167,17 @@
                 <h3>Built for Developers</h3>
                 <p>
                   Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia.
+                  countries Vokalia and Consonantia, there live the blind texts.
                 </p>
+                <p><a href="#" class="read-more">Learn More</a></p>
               </div>
               <!-- /.service-contents-->
-            </a>
+            </div>
             <!-- /.service -->
+          </div>
 
-            <a
-              href="#"
-              class="service link horizontal d-flex"
-              data-aos="fade-left"
-              data-aos-delay="100"
-            >
+          <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="service horizontal d-flex">
               <div class="service-icon color-2 mb-4">
                 <svg
                   class="bi bi-arrow-repeat"
@@ -642,19 +202,17 @@
                 <h3>Modern Design</h3>
                 <p>
                   Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia.
+                  countries Vokalia and Consonantia, there live the blind texts.
                 </p>
+                <p><a href="#" class="read-more">Learn More</a></p>
               </div>
               <!-- /.service-contents-->
-            </a>
+            </div>
             <!-- /.service -->
+          </div>
 
-            <a
-              href="#"
-              class="service link horizontal d-flex"
-              data-aos="fade-left"
-              data-aos-delay="200"
-            >
+          <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="service horizontal d-flex">
               <div class="service-icon color-3 mb-4">
                 <svg
                   class="bi bi-briefcase"
@@ -679,44 +237,45 @@
                 <h3>Build Stunning Websites</h3>
                 <p>
                   Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia.
+                  countries Vokalia and Consonantia, there live the blind texts.
                 </p>
+                <p><a href="#" class="read-more">Learn More</a></p>
               </div>
               <!-- /.service-contents-->
-            </a>
+            </div>
             <!-- /.service -->
           </div>
-          <div class="col-lg-7">
-            <div class="img-shadow">
-              <div class="owl-single no-dots owl-carousel">
-                <div class="item">
-                  <span class="number">1/3</span>
-                  <img
-                    src="/static/images/dashboard.jpg"
-                    alt="Image"
-                    class="img-fluid"
+
+          <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="service horizontal d-flex">
+              <div class="service-icon color-4 mb-4">
+                <svg
+                  class="bi bi-collection"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.5 13.5h-13A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5zm-13 1A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5h-13zM2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1z"
                   />
-                </div>
-                <div class="item">
-                  <span class="number">2/3</span>
-                  <img
-                    src="/static/images/dashboard.jpg"
-                    alt="Image"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="item">
-                  <span class="number">3/3</span>
-                  <img
-                    src="/static/images/dashboard.jpg"
-                    alt="Image"
-                    class="img-fluid"
-                  />
-                </div>
+                </svg>
               </div>
+              <!-- /.icon -->
+              <div class="service-contents">
+                <h3>Bring Ideas to Life</h3>
+                <p>
+                  Far far away, behind the word mountains, far from the
+                  countries Vokalia and Consonantia, there live the blind texts.
+                </p>
+                <p><a href="#" class="read-more">Learn More</a></p>
+              </div>
+              <!-- /.service-contents-->
             </div>
+            <!-- /.service -->
           </div>
-          <!-- /.col-md-4 -->
         </div>
         <!-- /.row -->
       </div>
@@ -724,226 +283,439 @@
     </div>
     <!-- /.untree_co-section -->
 
-    <!--Contact Us-->
-    <div class="untree_co-section" id="contact-section">
+    <!--기능소개-->
+    <div class="untree_co-section bg-light" id="pricing-section">
       <div class="container">
-        <div class="row mb-5" data-aos="fade-up" data-aos-delay="0">
-          <div class="col-12 text-center">
-            <span class="caption">Contact</span>
-            <h2 class="heading">Get In Touch</h2>
-            <p>Far from the countries Vokalia and Consonantia</p>
+        <div class="row pricing-title">
+          <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="0">
+            <span class="caption">FUNCTIONS</span>
+            <h2 class="heading">기능소개</h2>
+            <p>더 안전한 PM문화를 위한 필수 기능을 소개합니다!</p>
           </div>
         </div>
         <!-- /.row -->
-        <div class="row">
-          <div class="col-lg-7">
-            <form class="contact-form" data-aos="fade-up" data-aos-delay="100">
-              <div class="row">
-                <div class="col-6">
-                  <div class="form-group">
-                    <label class="" for="fname">First name</label>
-                    <input type="text" class="form-control" id="fname" />
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="row">
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="pricing">
+                  <div class="body">
+                    <div class="price">
+                      <span class="price"
+                        ><sup>1</sup>
+                        <span>수요 예측</span
+                        ></span
+                      >
+                      <span class="d-block plan mb-4">기능</span>
+                    </div>
+                    <ul class="list-unstyled ul-check primary mb-5">
+                      <li>There live the blind texts</li>
+                      <li>Far far away behind the word</li>
+                      <li>Far from the countries Vokalia and Consonantia</li>
+                    </ul>
+                    <p class="text-center mb-0">
+                      <a href="/demand" class="btn btn-outline-primary"
+                        >Get Start</a
+                      >
+                    </p>
                   </div>
                 </div>
-                <div class="col-6">
-                  <div class="form-group">
-                    <label class="" for="lname">Last name</label>
-                    <input type="text" class="form-control" id="lname" />
+                <!-- /.pricing -->
+              </div>
+              <!-- /.col-lg-4 -->
+
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="pricing active">
+                  <div class="body">
+                    <div class="price">
+                      <span class="price"
+                        ><sup>2</sup> <span>헬멧 인증</span></span
+                      >
+                      <span class="d-block plan mb-4">기능</span>
+                    </div>
+                    <ul class="list-unstyled ul-check primary mb-5">
+                      <li>There live the blind texts</li>
+                      <li>Far far away behind the word</li>
+                      <li>Far from the countries Vokalia and Consonantia</li>
+                    </ul>
+                    <p class="text-center mb-0">
+                      <a href="/helmet" class="btn btn-outline-primary"
+                        >Get Start</a
+                      >
+                    </p>
                   </div>
                 </div>
+                <!-- /.pricing -->
               </div>
-              <div class="form-group">
-                <label class="" for="email">Email address</label>
-                <input type="email" class="form-control" id="email" />
+              <!-- /.col-lg-4 -->
+
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="pricing">
+                  <div class="body">
+                    <div class="price">
+                      <span class="price"
+                        ><sup>3</sup>
+                        <span>주차 인증</span
+                        ></span
+                      >
+                      <span class="d-block plan mb-4">기능</span>
+                    </div>
+                    <ul class="list-unstyled ul-check primary mb-5">
+                      <li>There live the blind texts</li>
+                      <li>Far far away behind the word</li>
+                      <li>Far from the countries Vokalia and Consonantia</li>
+                    </ul>
+                    <p class="text-center mb-0">
+                      <a href="/parking" class="btn btn-outline-primary"
+                        >Get Start</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <!-- /.pricing -->
               </div>
-
-              <div class="form-group">
-                <label class="" for="message">Message</label>
-                <textarea
-                  name=""
-                  class="form-control"
-                  id="message"
-                  cols="30"
-                  rows="5"
-                ></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary">
-                Send Message
-              </button>
-            </form>
-          </div>
-          <!-- /.col-lg-7 -->
-          <div class="col-lg-4 ml-auto" data-aos="fade-up" data-aos-delay="200">
-            <div class="quick-contact">
-              <h3 class="h5 mb-4">Contact Info</h3>
-              <address class="text-black d-flex">
-                <span class="mt-1 icon-room mr-2"></span
-                ><span>43 Raymouth Rd. Baltemoer, London 3910</span>
-              </address>
-              <ul class="list-unstyled ul-links mb-4">
-                <li>
-                  <a href="tel://11234567890" class="d-flex"
-                    ><span class="mt-1 icon-phone mr-2"></span
-                    ><span>+1(123)-456-7890</span></a
-                  >
-                </li>
-
-                <li>
-                  <a href="tel://11234567890" class="d-flex"
-                    ><span class="mt-1 icon-phone mr-2"></span
-                    ><span>+1(123)-456-7890</span></a
-                  >
-                </li>
-
-                <li>
-                  <a href="mailto:info@mydomain.com" class="d-flex"
-                    ><span class="mt-1 icon-envelope mr-2"></span
-                    ><span>info@mydomain.com</span></a
-                  >
-                </li>
-
-                <li>
-                  <a href="https://untree.co/" target="_blank" class="d-flex"
-                    ><span class="mt-1 icon-globe mr-2"></span
-                    ><span>https://untree.co/</span></a
-                  >
-                </li>
-              </ul>
+              <!-- /.col-lg-4 -->
             </div>
+            <!-- /.row -->
           </div>
-          <!-- /.col-lg-4 -->
+          <!-- /.col-lg-8 -->
         </div>
         <!-- /.row -->
       </div>
       <!-- /.container -->
     </div>
-    <!-- /.untree_co-section bg-light -->
+    <!-- /.untree_co-section -->
 
-    <div class="site-footer">
-      <div class="footer-dots"></div>
-      <!-- /.footer-dots -->
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="widget">
-              <h3>About Launch<span class="text-primary">.</span></h3>
-              <p>
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
-              </p>
-            </div>
-            <!-- /.widget -->
-            <div class="widget">
-              <h3>Follow Us</h3>
-              <ul class="list-unstyled social">
-                <li>
-                  <a href="#"><span class="icon-instagram"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-twitter"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-facebook"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-linkedin"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-pinterest"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-dribbble"></span></a>
-                </li>
-              </ul>
-            </div>
-            <!-- /.widget -->
+    <!--팀소개-->
+    <div class="row pt-5" id="features-section">
+      <div class="col-12 mb-5" data-aos="fade-up">
+        <span class="caption">Team</span>
+        <h2 class="heading">The Team</h2>
+      </div>
+      <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delayt="100">
+        <img
+          src="/static/images/person_1.jpg"
+          alt="Image"
+          class="img-fluid mb-3 w-50 rounded-circle"
+        />
+        <h3 class="h5 font-weight-bold">Job Smith</h3>
+        <p>
+          Separated they
+          <span class="highlight"
+            >live in Bookmarksgrove right at the coast of the Semantics</span
+          >, a large language ocean. A small river named Duden flows by their
+          place and supplies it with the necessary regelialia.
+        </p>
+      </div>
+      <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delayt="200">
+        <img
+          src="/static/images/person_2.jpg"
+          alt="Image"
+          class="img-fluid mb-3 w-50 rounded-circle"
+        />
+        <h3 class="h5 font-weight-bold">Jenny Wilson</h3>
+        <p>
+          Separated they
+          <span class="highlight"
+            >live in Bookmarksgrove right at the coast of the Semantics</span
+          >, a large language ocean. A small river named Duden flows by their
+          place and supplies it with the necessary regelialia.
+        </p>
+      </div>
+      <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delayt="300">
+        <img
+          src="/static/images/person_3.jpg"
+          alt="Image"
+          class="img-fluid mb-3 w-50 rounded-circle"
+        />
+        <h3 class="h5 font-weight-bold">Richard Cruise</h3>
+        <p>
+          Separated they
+          <span class="highlight"
+            >live in Bookmarksgrove right at the coast of the Semantics</span
+          >, a large language ocean. A small river named Duden flows by their
+          place and supplies it with the necessary regelialia.
+        </p>
+      </div>
+      <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delayt="100">
+        <img
+          src="/static/images/person_1.jpg"
+          alt="Image"
+          class="img-fluid mb-3 w-50 rounded-circle"
+        />
+        <h3 class="h5 font-weight-bold">Job Smith</h3>
+        <p>
+          Separated they
+          <span class="highlight"
+            >live in Bookmarksgrove right at the coast of the Semantics</span
+          >, a large language ocean. A small river named Duden flows by their
+          place and supplies it with the necessary regelialia.
+        </p>
+      </div>
+      <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delayt="100">
+        <img
+          src="/static/images/person_1.jpg"
+          alt="Image"
+          class="img-fluid mb-3 w-50 rounded-circle"
+        />
+        <h3 class="h5 font-weight-bold">현 채 원</h3>
+        <p>
+           잘 할 수 있는 것을 선택하고, 잘 하고 싶은 것을 공부하는
+           똑똑한 엔지니어를 꿈꿉니다. 
+           <span class="highlight"
+            >세상의 모든 데이터가 좀 더 값지게 쓰일 수 있도록 노력하는 엔지니어.</span
+          > <br>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.untree_co-section -->
+
+<!--사이트 사진 추가해서 마무리(대시보드)-->
+<div class="untree_co-section bg-light">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-lg-5 order-lg-2 js-custom-dots">
+        <a
+          href="#"
+          class="service link horizontal d-flex active"
+          data-aos="fade-left"
+          data-aos-delay="0"
+        >
+          <div class="service-icon color-1 mb-4">
+            <svg
+              class="bi bi-app-indicator"
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"
+              />
+              <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            </svg>
           </div>
-          <!-- /.col-lg-3 -->
-
-          <div class="col-lg-2 ml-auto">
-            <div class="widget">
-              <h3>Projects</h3>
-              <ul class="list-unstyled float-left links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-            <!-- /.widget -->
-          </div>
-          <!-- /.col-lg-3 -->
-
-          <div class="col-lg-2">
-            <div class="widget">
-              <h3>Services</h3>
-              <ul class="list-unstyled float-left links">
-                <li><a href="#">Built for Developers</a></li>
-                <li><a href="#">Modern Design</a></li>
-                <li><a href="#">Building Stunning Websites</a></li>
-                <li><a href="#">Bring Ideas To Life</a></li>
-              </ul>
-            </div>
-            <!-- /.widget -->
-          </div>
-          <!-- /.col-lg-3 -->
-
-          <div class="col-lg-3">
-            <div class="widget">
-              <h3>Quick Contact</h3>
-              <address>43 Raymouth Rd. Baltemoer, London 3910</address>
-              <ul class="list-unstyled links mb-4">
-                <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-                <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-                <li>
-                  <a href="mailto:info@mydomain.com">info@mydomain.com</a>
-                </li>
-              </ul>
-            </div>
-            <!-- /.widget -->
-          </div>
-          <!-- /.col-lg-3 -->
-        </div>
-        <!-- /.row -->
-
-        <div class="row mt-5">
-          <div class="col-12 text-center">
-            <p class="copyright">
-              Copyright &copy;
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              . All Rights Reserved. &mdash; Designed with love by
-              <a href="https://untree.co">Untree.co</a>
-              <!-- License information: https://untree.co/license/ -->
+          <!-- /.icon -->
+          <div class="service-contents">
+            <h3>Built for Developers</h3>
+            <p>
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia.
             </p>
           </div>
+          <!-- /.service-contents-->
+        </a>
+        <!-- /.service -->
+
+        <a
+          href="#"
+          class="service link horizontal d-flex"
+          data-aos="fade-left"
+          data-aos-delay="100"
+        >
+          <div class="service-icon color-2 mb-4">
+            <svg
+              class="bi bi-arrow-repeat"
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.854 7.146a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L2.5 8.207l1.646 1.647a.5.5 0 0 0 .708-.708l-2-2zm13-1a.5.5 0 0 0-.708 0L13.5 7.793l-1.646-1.647a.5.5 0 0 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0 0-.708z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M8 3a4.995 4.995 0 0 0-4.192 2.273.5.5 0 0 1-.837-.546A6 6 0 0 1 14 8a.5.5 0 0 1-1.001 0 5 5 0 0 0-5-5zM2.5 7.5A.5.5 0 0 1 3 8a5 5 0 0 0 9.192 2.727.5.5 0 1 1 .837.546A6 6 0 0 1 2 8a.5.5 0 0 1 .501-.5z"
+              />
+            </svg>
+          </div>
+          <!-- /.icon -->
+          <div class="service-contents">
+            <h3>Modern Design</h3>
+            <p>
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia.
+            </p>
+          </div>
+          <!-- /.service-contents-->
+        </a>
+        <!-- /.service -->
+
+        <a
+          href="#"
+          class="service link horizontal d-flex"
+          data-aos="fade-left"
+          data-aos-delay="200"
+        >
+          <div class="service-icon color-3 mb-4">
+            <svg
+              class="bi bi-briefcase"
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-6h-1v6a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-6H0v6z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v2.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 6.884V4.5zM1.5 4a.5.5 0 0 0-.5.5v1.616l6.871 1.832a.5.5 0 0 0 .258 0L15 6.116V4.5a.5.5 0 0 0-.5-.5h-13zM5 2.5A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z"
+              />
+            </svg>
+          </div>
+          <!-- /.icon -->
+          <div class="service-contents">
+            <h3>Build Stunning Websites</h3>
+            <p>
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia.
+            </p>
+          </div>
+          <!-- /.service-contents-->
+        </a>
+        <!-- /.service -->
+      </div>
+      <div class="col-lg-7">
+        <div class="img-shadow">
+          <div class="owl-single no-dots owl-carousel">
+            <div class="item">
+              <span class="number">1/3</span>
+              <img
+                src="/static/images/dashboard.jpg"
+                alt="Image"
+                class="img-fluid"
+              />
+            </div>
+            <div class="item">
+              <span class="number">2/3</span>
+              <img
+                src="/static/images/dashboard.jpg"
+                alt="Image"
+                class="img-fluid"
+              />
+            </div>
+            <div class="item">
+              <span class="number">3/3</span>
+              <img
+                src="/static/images/dashboard.jpg"
+                alt="Image"
+                class="img-fluid"
+              />
+            </div>
+          </div>
         </div>
       </div>
-      <!-- /.container -->
+      <!-- /.col-md-4 -->
     </div>
-    <!-- /.site-footer -->
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.untree_co-section -->
 
-    <div id="overlayer"></div>
-    <div class="loader">
-      <div class="spinner-border" role="status">
-        <span class="sr-only">Loading...</span>
+<!--Contact Us-->
+<div class="untree_co-section" id="contact-section">
+  <div class="container">
+    <div class="row mb-5" data-aos="fade-up" data-aos-delay="0">
+      <div class="col-12 text-center">
+        <span class="caption">Contact</span>
+        <h2 class="heading">Get In Touch</h2>
+        <p>Far from the countries Vokalia and Consonantia</p>
       </div>
     </div>
+    <!-- /.row -->
+    <div class="row">
+      <div class="col-lg-7">
+        <form class="contact-form" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-6">
+              <div class="form-group">
+                <label class="" for="fname">First name</label>
+                <input type="text" class="form-control" id="fname" />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label class="" for="lname">Last name</label>
+                <input type="text" class="form-control" id="lname" />
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="" for="email">Email address</label>
+            <input type="email" class="form-control" id="email" />
+          </div>
 
-    <script src="/static/js/jquery-3.4.1.min.js"></script>
-    <script src="/static/js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="/static/js/popper.min.js"></script>
-    <script src="/static/js/bootstrap.min.js"></script>
-    <script src="/static/js/owl.carousel.min.js"></script>
-    <script src="/static/js/jquery.easing.1.3.js"></script>
-    <script src="/static/js/jquery.animateNumber.min.js"></script>
-    <script src="/static/js/jquery.waypoints.min.js"></script>
-    <script src="/static/js/jquery.fancybox.min.js"></script>
-    <script src="/static/js/aos.js"></script>
-    <script src="/static/js/custom.js"></script>
-  </body>
-</html>
+          <div class="form-group">
+            <label class="" for="message">Message</label>
+            <textarea
+              name=""
+              class="form-control"
+              id="message"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+      <!-- /.col-lg-7 -->
+      <div class="col-lg-4 ml-auto" data-aos="fade-up" data-aos-delay="200">
+        <div class="quick-contact">
+          <h3 class="h5 mb-4">Contact Info</h3>
+          <address class="text-black d-flex">
+            <span class="mt-1 icon-room mr-2"></span
+            ><span>43 Raymouth Rd. Baltemoer, London 3910</span>
+          </address>
+          <ul class="list-unstyled ul-links mb-4">
+            <li>
+              <a href="tel://11234567890" class="d-flex"
+                ><span class="mt-1 icon-phone mr-2"></span
+                ><span>+1(123)-456-7890</span></a
+              >
+            </li>
+
+            <li>
+              <a href="tel://11234567890" class="d-flex"
+                ><span class="mt-1 icon-phone mr-2"></span
+                ><span>+1(123)-456-7890</span></a
+              >
+            </li>
+
+            <li>
+              <a href="mailto:info@mydomain.com" class="d-flex"
+                ><span class="mt-1 icon-envelope mr-2"></span
+                ><span>info@mydomain.com</span></a
+              >
+            </li>
+
+            <li>
+              <a href="https://untree.co/" target="_blank" class="d-flex"
+                ><span class="mt-1 icon-globe mr-2"></span
+                ><span>https://untree.co/</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- /.col-lg-4 -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.untree_co-section bg-light -->
+
+{% endblock %}
