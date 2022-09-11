@@ -26,7 +26,7 @@ MODEL_ROOT = os.path.join(BASE_DIR, "models")
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
