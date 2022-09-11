@@ -7,6 +7,7 @@ from PIL import Image as im
 import torch
 import json
 import numpy as np
+import cv2 as cv
 
 import os
 os.environ['KMP_DUPLICATE_LIB_OK']='True'
@@ -139,9 +140,28 @@ def helmet(request):
         img_bytes = uploaded_img_qs.image.read()
         img = im.open(io.BytesIO(img_bytes))
 
+        # resize to (416,416) ; fill in the blanks with black
+        image = np.array(img)
+        size = (416,416)
+        base_pic=np.zeros((size[1],size[0],3),np.uint8)
+        h,w=image.shape[:2]
+        ash=size[1]/h
+        asw=size[0]/w
+        if asw<ash:
+            sizeas=(int(w*asw),int(h*asw))
+        else:
+            sizeas=(int(w*ash),int(h*ash))
+        image = cv.resize(image,dsize=sizeas)
+        base_pic[int(size[1]/2-sizeas[1]/2):int(size[1]/2+sizeas[1]/2),
+        int(size[0]/2-sizeas[0]/2):int(size[0]/2+sizeas[0]/2),:]=image
+
+        # make border ; for detect when pictures are full
+        nTop = nBottom = nLeft = nRight = 70
+        img = cv.copyMakeBorder(base_pic, nTop, nBottom, nLeft, nRight, 
+                            borderType=cv.BORDER_CONSTANT)
+
         path_hubconfig = "yolov5_code"
         path_weightfile = "best.pt"
-
 
         model = torch.hub.load(path_hubconfig, 'custom',
                                 path=path_weightfile, source='local')

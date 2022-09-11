@@ -1089,6 +1089,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     text-align: left;
     color: #000000;
     background: #f8f9fa;
+    font-size: 20px;
     border: none;
     padding-left: 40px;
     border-radius: 0;
