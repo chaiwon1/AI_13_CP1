@@ -50,11 +50,6 @@ clyent==1.2.1
 cmd2==2.4.2
 colorama==0.4.4
 colorcet==2.0.6
-conda-content-trust==0+unknown
-conda-pack==0.6.0
-conda-package-handling==1.8.1
-conda-repo-cli==1.0.4
-conda-verify==3.4.2
 constantly==15.1.0
 cookiecutter==1.7.3
 cryptography==3.4.8
