@@ -162,7 +162,7 @@ def helmet(request):
                             borderType=cv.BORDER_CONSTANT)
 
         path_hubconfig = "yolov5_code"
-        path_weightfile = "best.pt"
+        path_weightfile = "best_h.pt"
 
         model = torch.hub.load(path_hubconfig, 'custom',
                                 path=path_weightfile, source='local')
@@ -228,10 +228,10 @@ def parking(request):
         base_pic[int(size[1]/2-sizeas[1]/2):int(size[1]/2+sizeas[1]/2),
         int(size[0]/2-sizeas[0]/2):int(size[0]/2+sizeas[0]/2),:]=image
 
-        # # make border ; for detect when pictures are full
-        # nTop = nBottom = nLeft = nRight = 70
-        # img = cv.copyMakeBorder(base_pic, nTop, nBottom, nLeft, nRight, 
-        #                     borderType=cv.BORDER_CONSTANT)
+        # make border ; for detect when pictures are full
+        nTop = nBottom = nLeft = nRight = 70
+        img = cv.copyMakeBorder(base_pic, nTop, nBottom, nLeft, nRight, 
+                            borderType=cv.BORDER_CONSTANT)
 
         path_hubconfig = "yolov5_code"
         path_weightfile = "best_p.pt"
