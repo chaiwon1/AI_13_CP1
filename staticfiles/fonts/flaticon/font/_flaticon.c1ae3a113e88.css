@@ -1,0 +1,56 @@
+/*
+    Flaticon icon font: Flaticon
+    Creation date: 10/06/2020 01:23
+    */
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.7c5dfd28db45.eot");
+  src: url("./Flaticon.7c5dfd28db45.eot?#iefix") format("embedded-opentype"), url("./Flaticon.e07fbe473447.woff2") format("woff2"), url("./Flaticon.0e6503ee3dbe.woff") format("woff"), url("./Flaticon.dd16bd9090e1.ttf") format("truetype"), url("./Flaticon.9732bdd6077b.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.9732bdd6077b.svg#Flaticon") format("svg"); } }
+
+.fi:before {
+  display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+.flaticon-suitcase:before {
+  content: "\f100"; }
+
+.flaticon-crosshair:before {
+  content: "\f101"; }
+
+.flaticon-darts:before {
+  content: "\f102"; }
+
+.flaticon-group:before {
+  content: "\f103"; }
+
+.flaticon-discussion:before {
+  content: "\f104"; }
+
+.flaticon-partnership-handshake:before {
+  content: "\f105"; }
+
+.flaticon-strategy:before {
+  content: "\f106"; }
+
+.flaticon-chess:before {
+  content: "\f107"; }
+
+.flaticon-target:before {
+  content: "\f108"; }
