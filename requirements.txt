@@ -6,7 +6,7 @@ anyio==3.5.0
 appdirs==1.4.4
 applaunchservices==0.2.1
 appnope==0.1.2
-appscript==1.1.2
+# appscript==1.1.2
 APScheduler==3.9.1
 argon2-cffi==21.3.0
 argon2-cffi-bindings==21.2.0
