@@ -5,7 +5,7 @@ DATABASES = {
         'NAME' : 'cp1db',
         'USER' :'chaiwon',
         'PASSWORD' : 'codestatesteam06',
-        'HOST' : '127.0.0.1',
+        'HOST' : 'cp1.chlrzs6niw0m.ap-northeast-2.rds.amazonaws.com',
         'PORT' : '3306',
         'OPTIONS' : {
             'init_command': 'SET sql_mode="STRICT_TRANS_TABLES"'
