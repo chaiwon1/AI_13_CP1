@@ -185,7 +185,7 @@
   </div>
 </div>
 
-{% if score >= 0.8 %}
+{% if inference_img %}
 <div class="container pb-5 mb-5 border-bottom">
   <div class="row">
     <div class="col-lg-12">
@@ -204,7 +204,7 @@
   </div>
 </div>
 
-{% elif score <= 0.8 %}
+{% else %}
 <div class="container pb-5 mb-5 border-bottom">
   <div class="row">
     <div class="col-lg-12">

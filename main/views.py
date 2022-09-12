@@ -173,7 +173,7 @@ def helmet(request):
         results.render()
         for img in results.ims:
             img_base64 = im.fromarray(img)
-            img_base64.save("media/yolo_out/image0.jpg", format="JPEG")
+            img_base64.save("media/yolo_out/image_h.jpg", format="JPEG")
 
         # save confidence score
         results_df = results.pandas().xyxy[0]
@@ -182,11 +182,11 @@ def helmet(request):
         score = json.loads(results_json)
         final_score = score[0]['confidence']
 
-        file_path = 'media/yolo_out/score.json' # score.json path
+        file_path = 'media/yolo_out/score_h.json' # score.json path
         with open(file_path, 'w', encoding='utf-8') as file:
             json.dump(score, file)
 
-        inference_img = "/media/yolo_out/image0.jpg"
+        inference_img = "/media/yolo_out/image_h.jpg"
 
         form = ImageUploadForm()
         context = {
@@ -200,6 +200,73 @@ def helmet(request):
 def parking(request):
     if request.method == 'GET' :
         return render(request, 'main/parking.html')
+
+    elif request.method == 'POST':
+        form = ImageUploadForm(request.POST, request.FILES)
+        img = request.FILES.get('image')
+        img_instance = ImageModel(
+            image=img
+        )
+        img_instance.save()
+
+        uploaded_img_qs = ImageModel.objects.filter().last()
+        img_bytes = uploaded_img_qs.image.read()
+        img = im.open(io.BytesIO(img_bytes))
+
+        # resize to (416,416) ; fill in the blanks with black
+        image = np.array(img)
+        size = (416,416)
+        base_pic=np.zeros((size[1],size[0],3),np.uint8)
+        h,w=image.shape[:2]
+        ash=size[1]/h
+        asw=size[0]/w
+        if asw<ash:
+            sizeas=(int(w*asw),int(h*asw))
+        else:
+            sizeas=(int(w*ash),int(h*ash))
+        image = cv.resize(image,dsize=sizeas)
+        base_pic[int(size[1]/2-sizeas[1]/2):int(size[1]/2+sizeas[1]/2),
+        int(size[0]/2-sizeas[0]/2):int(size[0]/2+sizeas[0]/2),:]=image
+
+        # # make border ; for detect when pictures are full
+        # nTop = nBottom = nLeft = nRight = 70
+        # img = cv.copyMakeBorder(base_pic, nTop, nBottom, nLeft, nRight, 
+        #                     borderType=cv.BORDER_CONSTANT)
+
+        path_hubconfig = "yolov5_code"
+        path_weightfile = "best_p.pt"
+
+        model = torch.hub.load(path_hubconfig, 'custom',
+                                path=path_weightfile, source='local')
+
+        results = model(img, size=640)
+
+        # save detected img
+        results.render()
+        for img in results.ims:
+            img_base64 = im.fromarray(img)
+            img_base64.save("media/yolo_out/image_p.jpg", format="JPEG")
+
+        # save confidence score
+        results_df = results.pandas().xyxy[0]
+        results_df = results_df[results_df['class']==0][['confidence','class']]
+        results_json = results_df.to_json(orient="records")
+        score = json.loads(results_json)
+        final_score = score[0]['confidence']
+
+        file_path = 'media/yolo_out/score_p.json' # score.json path
+        with open(file_path, 'w', encoding='utf-8') as file:
+            json.dump(score, file)
+
+        inference_img = "/media/yolo_out/image_p.jpg"
+
+        form = ImageUploadForm()
+        context = {
+            "form": form,
+            "inference_img": inference_img,
+            "score": final_score
+        }
+        return render(request, 'main/parking.html', context)
 
 def accident(request):
     if request.method == 'GET' :
