@@ -308,7 +308,7 @@ Send2Trash==1.8.0
 service-identity==18.1.0
 setuptools==61.2.0
 simplejson==3.17.6
-sip==4.19.13
+sip==5.0.0
 six==1.16.0
 smart-open==5.1.0
 sniffio==1.2.0
