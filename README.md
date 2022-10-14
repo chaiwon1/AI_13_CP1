@@ -92,6 +92,13 @@
 <br>
 <br>
 
+<h1>아키텍쳐</h1>
+
+![unknown](https://user-images.githubusercontent.com/95471902/195784293-4b6ba5e5-2b46-485b-ba94-92a03e1940a9.png)
+
+<br>
+<br>
+
 <h1>개선점 및 회고</h1>
 <h4>1. 로그인 기능</h4>
   <ul>
